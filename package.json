@@ -1,0 +1,15 @@
+{
+  "name": "react-mardown-editor",
+  "version": "1.0.0",
+  "description": "React app for live markdown editor",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vikram <vikramcse.10@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "marked": "^0.3.5"
+  }
+}
