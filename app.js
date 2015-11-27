@@ -15,16 +15,22 @@ var Markdown = React.createClass({
 	},
 	render: function() {
 		return(
-			<div className="Editor">
-				<h3>Input</h3>
-				<textarea 
-					value={this.state.text}
-					ref="textarea"
-					onChange={this.handleChange} />
-				<h3>Output</h3>
-				<div
-		          className="content"
-		          dangerouslySetInnerHTML={this.rawMarkup()}/>
+			<div className="editor">
+				<div className="content col-md-6">
+					<h3>Input</h3>
+					<textarea
+						className="area"
+						value={this.state.text}
+						ref="textarea"
+						onChange={this.handleChange} />
+				</div>
+
+				<div className="view col-md-6">
+					<h3>Output</h3>
+					<div 
+						className="show"
+						dangerouslySetInnerHTML={this.rawMarkup()}/>
+			    </div>
 			</div>
 		);
 	}
